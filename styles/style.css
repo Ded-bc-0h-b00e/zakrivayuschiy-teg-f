@@ -152,18 +152,6 @@
 .main__card-text-paragraph {
   padding: 30px 22.5px 25px 27px;
 }
-.card__like-button {
-  position: relative;
-  display: grid;
-  justify-self: end;
-  justify-items: center;
-  align-items: center;
-  inline-size: 130px;
-  block-size: 38px;
-  margin-right: 25px;
-  margin-top: 15px;
-  margin-bottom: 25px;
-}
 .footer__button {
   position: relative;
   height: 55px;
