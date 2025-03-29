@@ -217,7 +217,7 @@
 .dialog::backdrop {
   background-color: rgb(0 0 0 / 75%);
 }
-.filter-hue-rotate{
+.filter-hue-rotate {
   filter: hue-rotate(0.5turn);
 }
 .filter-blur {
@@ -308,19 +308,16 @@
   transition: fill 0.3s ease-in-out, transition-delay 0s;
 }
 
-
 .like-icon.is-liked .main-body {
   fill: #ff0000;
   opacity: 1;
   transition: fill 0.3s ease-in-out, transition-delay 0.05s;
 }
 
-
 .like-icon.is-liked .contour {
   fill: #ff0000;
   transition: fill 0.3s ease-in-out, transition-delay 0.06s;
 }
-
 
 .like-icon.is-liked .sparks {
   fill: #ff0000;
@@ -366,7 +363,7 @@
       padding: 5px 10px 4px 10px;
   }
   .main__card-title-low {
-    padding: 2px 10px 5px 10px;
+      padding: 2px 10px 5px 10px;
   }
   .main__image-card {
       position: relative;
