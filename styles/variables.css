@@ -1,20 +1,20 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
 :root {
     --font-title: 'PressStart2P';
     --main-font: 'Inter';
     --text-variations-bold: 700;
     --text-variations-light: 400;
     --text-size: 18px;
-    --text-suze-min: 14px;
+    --text-size-min: 14px;
     --line-height: 21px;
     --lable-text-shadow: #FFF;
     --text-color: #000;
     --main-color: #000;
     --font-size-header-title: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
     --font-size-header: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-    --bacground-pos: fixed;
-    --main-background: repeating-linear-gradient(to right, #d3d3d3 0.01% 2px, transparent 2px 4px), 
-    repeating-linear-gradient(to bottom, #d3d3d3 0.01% 2px, transparent 2px 4px), 
+    --background-pos: fixed;
+    --main-background: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px), 
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px), 
     linear-gradient(to bottom, #e7e7e7, #1a1a1a);
     --heart-contour: #000;
     --active-color: #FF0000;
