@@ -27,6 +27,7 @@
 }
 .header__title {
   line-height: 100%;
+  font-size: var(--font-size-header-title);
 }
 .main {
   display: grid;
