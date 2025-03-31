@@ -114,17 +114,20 @@
   background-color: transparent;
   border: none;
   width: min-content;
-  height: 37px;
+  height: 34px;
   margin-bottom: 10px;
   transition: fill 0.3s linear;
+  outline: 2px solid transparent;
+  transition: outline 0.3s linear;
 }
 .like-icon {
   width: 36px;
   height: 36px;
 }
-.div__button {
+.card__button {
   justify-self: end;
   display: flex;
+  gap: 5px;
   width: 207px;
   padding-left: 2px;
 }
@@ -236,7 +239,7 @@
   outline: none;
 }
 .card__icon-button:focus-visible {
-  outline: solid 1px #000;
+  outline: solid 2px #000;
 }
 
 .standard-button::before {
@@ -256,54 +259,62 @@
 }
 .contour {
   fill: var(--main-color, #000);
-  transition-duration: 0.1s;
+  transition: fill ease-in-out 0.1s;
 }
 .main-body {
   fill: transparent;
-  transition: fill 0.3s ease-in-out, transition-delay 0.03s;
+  transition: fill 0.3s ease-in-out;
 }
 
 .core {
   fill: transparent;
-  transition: fill 0.3s ease-in-out, transition-delay 0.03s;
+  transition: fill 0.3s ease-in-out;
+  transition-delay: 0.03s
 }
 
 .like-icon:hover .core {
   fill: var(--main-color, #000);
-  transition: fill 0.3s ease-in-out, transition-delay 0s;
+  transition: fill 0.3s ease-in-out;
+  transition-delay: 0s;
 }
 
 .like-icon:hover .main-body {
   fill: var(--main-color, #000);
   opacity: 1;
-  transition: fill 0.3s ease-in-out, transition-delay 0.05s;
+  transition: fill 0.3s ease-in-out;
+  transition-delay: 0.03s;
 }
 
 .like-icon:active .core {
   fill: var(--active-color, #ff0000);
-  transition: fill 0.3s ease-in-out, transition-delay 0s;
+  transition: fill 0.3s ease-in-out;
+  transition-delay: 0s;
 }
 
 .like-icon:active .main-body {
   fill: var(--active-color, #ff0000);
   opacity: 1;
-  transition: fill 0.3s ease-in-out, transition-delay 0.05s;
+  transition: fill 0.3s ease-in-out;
+  transition-delay: 0.05s;
 }
 
 .like-icon.is-liked .core {
   fill: #ff0000;
-  transition: fill 0.3s ease-in-out, transition-delay 0s;
+  transition: fill 0.3s ease-in-out;
+  transition-delay: 0s;
 }
 
 .like-icon.is-liked .main-body {
   fill: #ff0000;
   opacity: 1;
-  transition: fill 0.3s ease-in-out, transition-delay 0.05s;
+  transition: fill 0.3s ease-in-out;
+  transition-delay: 0.05s;
 }
 
 .like-icon.is-liked .contour {
   fill: #ff0000;
-  transition: fill 0.3s ease-in-out, transition-delay 0.06s;
+  transition: fill 0.3s ease-in-out;
+  transition-delay: 0.06s;
 }
 
 .like-icon.is-liked .sparks {
@@ -334,12 +345,6 @@
   .header__title {
       padding-top: 10px;
   }
-
-  .standard-button {
-      font-family: var(--font-title);
-      font-size: var(--text-suze-min);
-  }
-
   .main__card-title {
       padding: 5px 10px 4px 10px;
   }
@@ -396,7 +401,7 @@
       justify-self: center;
       inline-size: 257px;
   }
-  .div__button {
+  .card__button {
       justify-content: center;
   }
 }
