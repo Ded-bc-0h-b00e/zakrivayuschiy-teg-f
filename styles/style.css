@@ -268,7 +268,7 @@
 .core {
   fill: transparent;
   transition: fill 0.3s ease-in-out;
-  transition-delay: 0.03s
+  transition-delay: 0.03s;
 }
 
 .like-icon:hover .core {
@@ -385,8 +385,8 @@
       justify-self: center;
   }
   .footer__button-text {
-    margin-bottom: 7px;
-    margin-right: 5px;
+      margin-bottom: 7px;
+      margin-right: 5px;
   }
   .button__text {
       align-self: center;
